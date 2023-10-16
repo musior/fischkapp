@@ -1,6 +1,11 @@
+import React from "react";
 import styles from "./AppHeader.module.css";
 
-export const AppHeader = () => (
+interface AppHeaderProps {
+  cardsAmount: number;
+}
+
+export const AppHeader = ({ cardsAmount = 0 }: AppHeaderProps) => (
   <header className={styles.header}>
     <div className={styles.headerBarLeft}>
       <img
@@ -9,7 +14,7 @@ export const AppHeader = () => (
         className={styles.headerBarLogo}
       />
       <p>
-        Cards: <span>{}</span>
+        Cards: <span>{cardsAmount}</span>
       </p>
     </div>
     <div className={styles.headerBarRight}>
