@@ -1,7 +1,6 @@
-import React from "react";
 import styles from "./AppHeader.module.css";
 
-export const AppHeader = ({cardsAmount = 0 as number}) => (
+export const AppHeader = () => (
   <header className={styles.header}>
     <div className={styles.headerBarLeft}>
       <img
@@ -10,7 +9,7 @@ export const AppHeader = ({cardsAmount = 0 as number}) => (
         className={styles.headerBarLogo}
       />
       <p>
-        Cards: <span>{cardsAmount}</span>
+        Cards: <span>{}</span>
       </p>
     </div>
     <div className={styles.headerBarRight}>
