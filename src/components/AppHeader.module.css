@@ -31,4 +31,5 @@
 .headerBarRight button {
   border: none;
   background-color: #fff;
+  cursor: pointer;
 }
